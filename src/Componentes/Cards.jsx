@@ -32,7 +32,13 @@ const Cards = () => {
     return (
         <>
             { data.map ( ( { lang, url, fcolor, scolor }) => {
-                return <Card  key = { lang } lang={lang} img={url} />
+                return <Card  
+                            key = {lang} 
+                            lang={lang} 
+                            url={url}
+                            fcolor = {fcolor}
+                            scolor = {scolor}
+                        />
                 }
             ) } 
         </>
