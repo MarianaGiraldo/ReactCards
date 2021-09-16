@@ -1,13 +1,12 @@
 import React from 'react';
-import './Card.css'
+import './Card.css';
 
-const Card = () => {
+const Card = ({lang,img, fcolor, scolor}) => {
     return (
         <div className="card">
-            <img src="https://cdn.svgporn.com/logos/python.svg" alt="lang.sgv"  />
-            <h3>Lenguaje</h3>
+            <img src={img} alt="lang.sgv"  />
+            <h3>{lang}</h3>
         </div>
     )
-}
-
+};
 export default Card
